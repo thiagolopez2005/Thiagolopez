@@ -215,8 +215,8 @@ function turnoJugador() {
         registroBatalla.insertBefore(mensajeElemento, registroBatalla.firstChild);
     });
     
-    // Después de 4 segundos, pasa el turno al enemigo
-    setTimeout(turnoEnemigo, 4000);
+    // Después de x segundos, pasa el turno al enemigo
+    setTimeout(turnoEnemigo, 2000);
 }
 
 // Función que ejecuta el turno del enemigo
