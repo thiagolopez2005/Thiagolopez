@@ -97,36 +97,35 @@ El Coliseo esperaba. El tesoro brillaba en la distancia. Y el destino de Zentria
             campModal.classList.add('hidden');
             storyText.innerHTML = story;
             storyModal.classList.remove('hidden');
-        // Reproducir audio desde la carpeta assets
-        const audio = new Audio('./assets/ElevenLabs_2025-03-28T14_17_56_Callum_pre_sp110_s46_sb75_se0_b_m2.mp3');
-        audio.play().catch(error => {
-            console.error("Error reproduciendo audio:", error);
-            // Mostrar botón de batalla por si acaso
-            startBattleBtn.classList.remove('hidden');
-        });
-
-        audio.onended = () => {
-            // Cuando termine el audio, puedes hacer algo más
-            startBattleBtn.classList.remove('hidden');
-        };
-
-        // Añadir evento para pausar audio al comenzar batalla
-        startBattleBtn.addEventListener('click', () => {
-            // Pausar el audio
-            audio.pause();
             
-            storyModal.classList.add('hidden');
-            // Aquí iniciarías la lógica de la batalla
-            alert('¡Comienza la batalla en el Coliseo de los Espíritus!');
+            // Reproducir audio desde la carpeta assets
+            const audio = new Audio('./assets/ElevenLabs_2025-03-28T14_17_56_Callum_pre_sp110_s46_sb75_se0_b_m2.mp3');
+            audio.play().catch(error => {
+                console.error("Error reproduciendo audio:", error);
+                // Mostrar botón de batalla por si acaso
+                startBattleBtn.classList.remove('hidden');
+            });
+
+            audio.onended = () => {
+                // Cuando termine el audio, puedes hacer algo más
+                startBattleBtn.classList.remove('hidden');
+            };
+
+            // Añadir evento para pausar audio al comenzar batalla
+            startBattleBtn.addEventListener('click', () => {
+                // Pausar el audio
+                audio.pause();
+                
+                storyModal.classList.add('hidden');
+                // Aquí iniciarías la lógica de la batalla
+                alert('¡Comienza la batalla en el Coliseo de los Espíritus!');
+            });
         });
-    });
 
         // Cambiar de campaña
         changeCampBtn.addEventListener('click', () => {
             alert('Función de cambio de campaña pendiente');
         });
-
-
     </script>
 </body>
 </html>
