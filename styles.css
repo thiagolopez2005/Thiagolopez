@@ -1,11 +1,11 @@
 /* Estilos base para el juego de Zentria */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1a202c;
-    color: #e2e8f0;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+body{
+    font-family: "Pixelify Sans", sans-serif;
+    background-image: url("assets/A\ dark\ forest\ scene\ in\ electric\ vivid\ colors\,\ strong\ hard\ light\,\ direct\ harsh\ shadows\,\ detailed\ textures\,\ and\ a\ high\ contrast.jpg");
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    z-index: -1; /* Asegura que la imagen esté detrás del contenido */    
 }
 
 /* Estilos para modales */
